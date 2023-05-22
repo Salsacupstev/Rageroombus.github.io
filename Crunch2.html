@@ -1,79 +1,57 @@
 <html>
 <head>
   <style>
-    /* Add your CSS styles here */
+    body {
+      background-color: pink;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: purple;
+      font-size: 50px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    p {
+      text-align: center;
+      color: green;
+      font-size: 30px;
+    }
   </style>
 </head>
 <body>
+  <h1>Brandy's Crunchwrap Supremes</h1>
   <div class="container">
-    <div class="header">
-      <h1>Brandy's Crunchwrap Supremes</h1>
-      <nav>
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#order">Order Online</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="hero">
-      <!-- Embed an image of a crunchwrap supreme from the search results -->
-      <img src="https://www.tacobell.com/images/22101_crunchwrap_supreme_269x269.jpg" alt="Crunchwrap Supreme">
-      <div class="cta">
-        <h2>Welcome to Brandy's Crunchwrap Supremes</h2>
-        <p>Where we serve the best crunchwraps in town!</p>
-        <a href="#order" class="button">Order Now</a>
-      </div>
-    </div>
-    <div class="menu" id="menu">
-      <h2>Our Menu</h2>
-      <p>Our crunchwraps are made with fresh ingredients, homemade sauces, and crispy tortillas. You can choose from a variety of flavors, such as chicken, beef, veggie, cheese, and more. We also offer salads, soups, drinks, and desserts to complete your meal.</p>
-      <div class="menu-items">
-        <!-- Embed some images of different crunchwrap flavors from the search results -->
-        <img src="https://www.delish.com/cooking/recipe-ideas/a52078/crunchwrap-supreme-recipe/" alt="Beef Crunchwrap Supreme">
-        <img src="https://www.twopurplefigs.com/wp-content/uploads/2021/05/Crunchwrap-Supreme-Recipe-3.jpg" alt="Chicken Crunchwrap Supreme">
-        <img src="https://www.veggiebalance.com/wp-content/uploads/2019/04/Vegan-Crunchwrap-Supreme-Recipe-4.jpg" alt="Veggie Crunchwrap Supreme">
-        <img src="https://www.thecookierookie.com/wp-content/uploads/2019/08/breakfast-crunchwrap-supreme-recipe-5-of-6.jpg" alt="Breakfast Crunchwrap Supreme">
-      </div>
-    </div>
-    <div class="about" id="about">
-      <h2>About Us</h2>
-      <p>Brandy's Crunchwrap Supremes is a family-owned and operated restaurant that started in 2023. We are passionate about serving delicious and satisfying food to our customers. We use only the finest ingredients and prepare everything fresh daily. Our goal is to make you happy and full with our crunchwraps.</p>
-      <!-- Embed an image of Brandy from the search results -->
-      <img src="https://www.thefamouspeople.com/profiles/images/brandy-norwood-3.jpg" alt="Brandy">
-    </div>
-    <div class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>We would love to hear from you! Whether you have a question, a comment, or a feedback, feel free to contact us using the form below. You can also follow us on social media to stay updated on our latest news and offers.</p>
-      <form action="#" method="post">
-        <!-- Add your contact form here -->
-        Name: <input type="text" name="name"><br>
-        Email: <input type="email" name="email"><br>
-        Message: <textarea name="message"></textarea><br>
-        <input type="submit" value="Send">
-      </form>
-      <div class="social-media">
-        <!-- Add your social media icons here -->
-        Follow us on:
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174876.png" alt="Twitter"></a>
-
-      </div>
-    </div>
-    <div class="order" id="order">
-      <h2>Order Online</h2>
-      <p>Craving for a crunchwrap? No problem! You can order online and get your food delivered to your door in no time. Just select your favorite flavor, add any extras, and checkout. It's that easy!</p>
-      <!-- Embed an image of an online order form from the search results -->
-      <img src="https://www.tacobell.com/images/order-online.png" alt="Order Online">
-    </div>
-    <div class="footer">
-      <p>&copy; 2023 Brandy's Crunchwrap Supremes. All rights reserved.</p>
-    </div>
+    <img src="https://i.imgur.com/5xZKj8g.jpg" alt="Brandy smiling with a crunchwrap supreme">
+    <img src="https://i.imgur.com/2Qy6w4L.jpg" alt="A close-up of a crunchwrap supreme">
+    <img src="https://i.imgur.com/3qVfJ9n.jpg" alt="Brandy holding a crunchwrap supreme in front of a rainbow">
   </div>
-
-  <!-- Add any JavaScript code here -->
+  <p>Do you love crunchy tortillas, cheesy sauce, and juicy meat? Then you'll love Brandy's Crunchwrap Supremes! They're the best thing since sliced bread! Order now and get a free drink and a side of nachos! Don't miss this amazing offer! Call 555-1234 or visit www.brandyscrunchwrapsupremes.com today!</p>
 </body>
-
 </html>
