@@ -7,7 +7,7 @@ body {
 }
 p {
   position: absolute;
-  font-size: 40px;
+  font-size: 5vw;
   transform: rotate(45deg);
   animation: move 5s infinite;
 }
@@ -18,70 +18,206 @@ p:nth-child(1) {
   color: #FF0000;
 }
 p:nth-child(2) {
-  top: 100px;
-  left: 200px;
-  font-family: 'Pacifico', cursive;
-  color: #00FF00;
+  top: 10vw;
+  left: 20vw;
+  
+font-family:'Pacifico', cursive;
+
+color:#00FF00;
+
 }
 p:nth-child(3) {
-  top: 200px;
-  left: 400px;
-  font-family: 'Lobster', cursive;
-  color: #0000FF;
+  
+top :20 vw;
+
+left :40 vw;
+
+font-family:'Lobster', cursive;
+
+color:#0000FF;
+
 }
 p:nth-child(4) {
-  top: 300px;
-  left: 600px;
-  font-family: 'Indie Flower', cursive;
-  color: #FFFF00;
+  
+top :30 vw;
+
+left :60 vw;
+
+font-family:'Indie Flower', cursive;
+
+color:#FFFF00;
+
 }
 p:nth-child(5) {
-  top: 400px;
-  left: 800px;
-  font-family: 'Shadows Into Light', cursive;
-  color: #00FFFF;
+  
+top :40 vw;
+
+left :80 vw;
+
+font-family:'Shadows Into Light', cursive;
+
+color:#00FFFF;
+
 }
+
 @keyframes move {
-  from {transform: rotate(45deg);}
-  to {transform: rotate(-45deg);}
+
+from {transform : rotate (45deg);}
+
+to { transform : rotate (-45deg);}
+
 }
+
 img {
-    position:absolute; 
-    width:100px; 
-    height:auto; 
-    animation: bounce 3s infinite alternate; 
+
+position:absolute;
+
+width :10 vw;
+
+height:auto;
+
+animation:bounce3s infinite alternate;
+
 }
-img:nth-child(6) {
-    top:50px; 
-    left:50px; 
+
+img :nth -child (6){
+
+top :5 vw;
+
+left :5 vw;
+
 }
-img:nth-child(7) {
-    top:150px; 
-    left:250px; 
+
+img :nth -child (7){
+
+top :15 vw;
+
+left :25 vw;
+
 }
-img:nth-child(8) {
-    top:250px; 
-    left:450px; 
+
+img :nth -child (8){
+
+top :25 vw;
+
+left :45 vw;
+
 }
-img:nth-child(9) {
-    top:350px; 
-    left:650px; 
+
+img :nth -child (9){
+
+top :35 vw;
+
+left :65 vw;
+
 }
+
 @keyframes bounce {
-    from {transform: translateY(0);}
-    to {transform: translateY(-50px);}
+
+from { transform : translateY (0);}
+
+to { transform : translateY (-5 vw);}
+
 }
-</style>
-</head>
-<body>
-<p>Mushroom Pizza</p>
-<p>Mushroom Pizza</p>
-<p>Mushroom Pizza</p>
-<p>Mushroom Pizza</p>
-<p>Mushroom Pizza</p>
-<img src="https://images.pexels.com/photos/724216/pexels-photo-724216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
-<img src="https://images.pexels.com/photos/1639567/pexels-photo-1639567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
-<img src="https://images.pexels.com/photos/209549/pexels-photo-209549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
-<img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
-</body>
-</html>
+
+p:nth-child(n+10) {
+    position:absolute; 
+    font-size:5vw; 
+    transform-origin:center center; 
+    animation:squishy-squashy-spinny-scaly-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy infinite linear both; 
+}
+p:nth-child(10) {
+    top:-10%; 
+    left:-10%; 
+    font-family:'Roboto', sans-serif; 
+    color:#FF0000; 
+}
+p:nth-child(11) {
+    top:-10%; 
+    right:-10%; 
+    font-family:'Pacifico', cursive; 
+    color:#00FF00; 
+}
+p:nth-child(12) {
+    bottom:-10%; 
+    left:-10%; 
+    font-family:'Lobster', cursive; 
+    color:#0000FF; 
+}
+p:nth-child(13) {
+    bottom:-10%; 
+    right:-10%; 
+    font-family:'Indie Flower', cursive; 
+    color:#FFFF00; 
+}
+p:nth-child(14) {
+    top:-20%; 
+    left:-20%; 
+    font-family:'Shadows Into Light', cursive; 
+    color:#00FFFF; 
+}
+@keyframes squishy-squashy-spinny-scaly-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy-thingy
+{
+	0%{transform-origin:center center;}
+	25%{transform-origin:center center;}
+	50%{transform-origin:center center;}
+	75%{transform-origin:center center;}
+	100%{transform-origin:center center;}
+	0%{transform:squishX(-1.2) squishY(-1.2);}
+	25%{transform:squishX(-1.2) squishY(-1.2);}
+	50%{transform:squishX(-1.2) squishY(-1.2);}
+	75%{transform:squishX(-1.2) squishY(-1.2);}
+	100%{transform:squishX(-1.2) squishY(-1.2);}
+	0%{transform:squishX(-1.2) squishY(-1.2);}
+	25%{transform:squishX(-1.2) squishY(-1.2);}
+	50%{transform:squishX(-1.2) squishY(-1.2);}
+	75%{transform:squishX(-1.2) squishY(-1.2);}
+	100%{transform:squishX(-1.2) squishY(-1.2);}
+	0%{transform:squishX(-1.2) squishY(-1.2);}
+	25%{transform:squishX(-1.2) squishY(-1.2);}
+	50%{transform:squishX(-1.2) squishY(-1.2);}
+	75%{transform:squishX(-1.2) squishY(-1.2);}
+	100%{transform:squishX(-1.2) squishY(-1.2);}
+	0%{transform:squishX(0)}
+	25%{transform:squishX(0)}
+	50%{transform:squishX(0)}
+	75%{transform:squishX(0)}
+	100%{transform:squishX(0)}
+	0%,100%,200%,300%,400%,500%,600%,700%,800%,900%,1000%,1100%,1200%,1300%,1400%,1500%,1600%,1700%,1800%,1900%,2000%
+	{
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+	
+	transform-origin:center center;}
+
+h1 {
+    position:absolute; 
+    font-size:20vw; 
+    text-align:center; 
+    width:100%; 
+    height:auto; 
+    z-index:-1; 
+    animation:bobbing-up-and-down-in-the-background-like-a-float-in-a-parade-or-something-like-that-or-maybe-like-a-balloon-or-something-like-that-or-maybe-like-a-bird-or-something-like-that-or-maybe-like-a-flying-saucer-or-something-like-that-or
