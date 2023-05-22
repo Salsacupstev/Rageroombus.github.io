@@ -1,92 +1,67 @@
 <html>
 <head>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto|Pacifico|Lobster|Indie+Flower|Dancing+Script|Shadows+Into+Light|Bungee+Shade');
-body {
-  background-color: #F0E68C;
+@keyframes move {
+  0% {transform: translate(0%, 0%);}
+  25% {transform: translate(50%, 50%);}
+  50% {transform: translate(-50%, -50%);}
+  75% {transform: translate(-50%, 50%);}
+  100% {transform: translate(0%, 0%);}
 }
-p {
-  position: absolute;
-  font-size: 50px;
-  animation: move 5s infinite linear;
+
+.brandy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  animation: move 5s infinite;
 }
-p:nth-child(1) {
-  font-family: 'Roboto', sans-serif;
-  color: #FF0000;
-  animation-name: move1;
+
+.red {
+  color: red;
 }
-p:nth-child(2) {
-  font-family: 'Pacifico', cursive;
-  color: #00FF00;
-  animation-name: move2;
+
+.orange {
+  color: orange;
 }
-p:nth-child(3) {
-  font-family: 'Lobster', cursive;
-  color: #0000FF;
-  animation-name: move3;
+
+.yellow {
+  color: yellow;
 }
-p:nth-child(4) {
-  font-family: 'Indie Flower', cursive;
-  color: #FF00FF;
-  animation-name: move4;
+
+.green {
+  color: green;
 }
-p:nth-child(5) {
-  font-family: 'Dancing Script', cursive;
-  color: #00FFFF;
-  animation-name: move5;
+
+.blue {
+  color: blue;
 }
-p:nth-child(6) {
-  font-family: 'Shadows Into Light', cursive;
-  color: #FFFF00;
-  animation-name: move6;
+
+.purple {
+  color: purple;
 }
-h1 {
-  position: absolute;
-  font-family: 'Bungee Shade', cursive;
-  font-size: 100px;
-  color: #FFFFFF;
-  animation: bounce 3s infinite ease-in-out;
+
+.wing {
+  width: 100px;
+  height: auto;
 }
-@keyframes move1 {
-  from {left: -10%; top: -10%; transform: translateX(0) translateY(0);}
-  to {left: calc(110% - min(110%,110%)); top: calc(110% - min(110%,110%)); transform: translateX(-100%) translateY(-100%);}
-}
-@keyframes move2 {
-  from {left: -10%; top: calc(50% - min(10%,10%)); transform: translateX(0) translateY(0);}
-  to {left: calc(110% - min(110%,110%)); top: calc(50% - min(10%,10%)); transform: translateX(-100%) translateY(0);}
-}
-@keyframes move3 {
-  from {left: -10%; top: calc(110% - min(10%,10%)); transform: translateX(0) translateY(-100%);}
-  to {left: calc(110% - min(110%,110%)); top: -10%; transform: translateX(-100%) translateY(100%);}
-}
-@keyframes move4 {
-  from {left: calc(50% - min(10%,10%)); top: -10%; transform: translateX(0) translateY(-100%);}
-  to {left: calc(50% - min(10%,10%)); top: calc(110% - min(110%,110%)); transform: translateX(0) translateY(-100%);}
-}
-@keyframes move5 {
-  from {left: calc(110% - min(10%,10%)); top: -10%; transform: translateX(-100%) translateY(-100%);}
-  to {left: -10%; top: calc(110% - min(10%,10%)); transform: translateX(-100%) translateY(-100%);}
-}
-@keyframes move6 {
-  from {left: calc(110% - min(10%,10%)); top: calc(50% - min(10%,10%)); transform: translateX(-100%) translateY(-50%);}
-  to {left: -10%; top: calc(50% - min(10%,10%)); transform: translateX(-100%) translateY(-50%);}
-}
-@keyframes bounce {
-    from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%; top:-20%; transform:none;}*/
-    /*from {transform-origin:center; left:-20%; top:-20%; transform:none;}
-    to {transform-origin:center; left:-20%;
+</style>
+</head>
+<body>
+<h1 class="brandy red">BRANDY!!!</h1>
+<h2 class="brandy orange">BRANDY!!!</h2>
+<h3 class="brandy yellow">BRANDY!!!</h3>
+<h4 class="brandy green">BRANDY!!!</h4>
+<h5 class="brandy blue">BRANDY!!!</h5>
+<h6 class="brandy purple">BRANDY!!!</h6>
+
+<img src="https://media.gettyimages.com/photos/buffalo-wings-picture-id157533029?s=612x612" alt="Buffalo wings" class="wing">
+<img src="https://media.gettyimages.com/photos/buffalo-chicken-wing-dip-horizontal-picture-id1081977396?s=612x612" alt="Buffalo chicken wing dip" class="wing">
+<img src="https://image.shutterstock.com/image-photo/buffalo-wild-wings-restaurant-260nw-115836433.jpg" alt="Buffalo Wild Wings restaurant" class="wing">
+
+<p>Buffalo is the second-largest city in New York and the seat of Erie County. It lies in Western New York, at the eastern end of Lake Erie, at the head of the Niagara River, on the United States border with Canada. [^1^][5]</p>
+
+<p>Buffalo is known for its cultural diversity, architecture, art galleries, museums, sports teams, and cuisine. It is also home to the Buffalo Zoo, the oldest zoo in the United States. [^2^][7]</p>
+
+<p>Buffalo is in Erie County and is one of the best places to live in New York. Living in Buffalo offers residents an urban suburban mix feel and most residents rent their homes. In Buffalo there are a lot of bars, restaurants, coffee shops, and parks. Many families and young professionals live in Buffalo and residents tend to be liberal. [^3^][4]</p>
+
+</body>
+</html>
