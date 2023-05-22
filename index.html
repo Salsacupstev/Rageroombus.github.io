@@ -45,6 +45,32 @@ p:nth-child(5) {
   from {transform: rotate(45deg);}
   to {transform: rotate(-45deg);}
 }
+img {
+    position:absolute; 
+    width:100px; 
+    height:auto; 
+    animation: bounce 3s infinite alternate; 
+}
+img:nth-child(6) {
+    top:50px; 
+    left:50px; 
+}
+img:nth-child(7) {
+    top:150px; 
+    left:250px; 
+}
+img:nth-child(8) {
+    top:250px; 
+    left:450px; 
+}
+img:nth-child(9) {
+    top:350px; 
+    left:650px; 
+}
+@keyframes bounce {
+    from {transform: translateY(0);}
+    to {transform: translateY(-50px);}
+}
 </style>
 </head>
 <body>
@@ -53,5 +79,9 @@ p:nth-child(5) {
 <p>Mushroom Pizza</p>
 <p>Mushroom Pizza</p>
 <p>Mushroom Pizza</p>
+<img src="https://images.pexels.com/photos/724216/pexels-photo-724216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
+<img src="https://images.pexels.com/photos/1639567/pexels-photo-1639567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
+<img src="https://images.pexels.com/photos/209549/pexels-photo-209549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
+<img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Mushroom pizza">
 </body>
 </html>
