@@ -8,7 +8,7 @@ body {
 p {
   position: absolute;
   font-size: 50px;
-  animation: move 5s infinite;
+  animation: move 5s infinite linear;
 }
 p:nth-child(1) {
   font-family: 'Roboto', sans-serif;
@@ -45,35 +45,35 @@ h1 {
   font-family: 'Bungee Shade', cursive;
   font-size: 100px;
   color: #FFFFFF;
-  animation: bounce 3s infinite;
+  animation: bounce 3s infinite linear;
 }
 @keyframes move1 {
-  from {left: -10%; top: -10%;}
-  to {left: calc(110% - min(110%,110%)); top: calc(110% - min(110%,110%));}
+  from {left: -10%; top: -10%; transform: translateX(0) translateY(0);}
+  to {left: calc(110% - min(110%,110%)); top: calc(110% - min(110%,110%)); transform: translateX(-100%) translateY(-100%);}
 }
 @keyframes move2 {
-  from {left: -10%; top: calc(50% - min(10%,10%));}
-  to {left: calc(110% - min(110%,110%)); top: calc(50% - min(10%,10%));}
+  from {left: -10%; top: calc(50% - min(10%,10%)); transform: translateX(0) translateY(0);}
+  to {left: calc(110% - min(110%,110%)); top: calc(50% - min(10%,10%)); transform: translateX(-100%) translateY(0);}
 }
 @keyframes move3 {
-  from {left: -10%; top: calc(110% - min(10%,10%));}
-  to {left: calc(110% - min(110%,110%)); top: -10%;}
+  from {left: -10%; top: calc(110% - min(10%,10%)); transform: translateX(0) translateY(-100%);}
+  to {left: calc(110% - min(110%,110%)); top: -10%; transform: translateX(-100%) translateY(100%);}
 }
 @keyframes move4 {
-  from {left: calc(50% - min(10%,10%)); top: -10%;}
-  to {left: calc(50% - min(10%,10%)); top: calc(110% - min(110%,110%));}
+  from {left: calc(50% - min(10%,10%)); top: -10%; transform: translateX(0) translateY(-100%);}
+  to {left: calc(50% - min(10%,10%)); top: calc(110% - min(110%,110%)); transform: translateX(0) translateY(-100%);}
 }
 @keyframes move5 {
-  from {left: calc(110% - min(10%,10%)); top: -10%;}
-  to {left: -10%; top: calc(110% - min(10%,10%));}
+  from {left: calc(110% - min(10%,10%)); top: -10%; transform: translateX(-100%) translateY(-100%);}
+  to {left: -10%; top: calc(110% - min(10%,10%)); transform: translateX(-100%) translateY(-100%);}
 }
 @keyframes move6 {
-  from {left: calc(110% - min(10%,10%)); top: calc(50% - min(10%,10%));}
-  to {left: -10%; top: calc(50% - min(10%,10%));}
+  from {left: calc(110% - min(10%,10%)); top: calc(50% - min(10%,10%)); transform: translateX(-100%) translateY(-50%);}
+  to {left: -10%; top: calc(50% - min(10%,10%)); transform: translateX(-100%) translateY(-50%);}
 }
 @keyframes bounce {
-  from {transform: translateX(-20%) translateY(-20%);}
-  to {transform: translateX(calc(120vw - min(120vw,120vh))) translateY(calc(120vh - min(120vw,120vh)));}
+  from {transform-origin:center; left:-20%; top:-20%; transform:none;}
+  to {transform-origin:center; left:-20%; top:-20%; transform:none;}
 }
 </style>
 </head>
