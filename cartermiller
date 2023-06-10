@@ -1,0 +1,38 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    p {
+      color: black;
+      font-size: 20px;
+    }
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.imgur.com/0Zw7xwE.png" alt="Carter Miller's School of Gipper logo" class="logo">
+  <h1>Welcome to Carter Miller's School of Gipper!</h1>
+  <p>Do you want to learn how to be a gipper? Do you want to have fun and make friends while doing it? Then you've come to the right place! Carter Miller's School of Gipper is the best place to learn the skills and attitude of a gipper. A gipper is someone who is always positive, optimistic, and cheerful. A gipper is someone who never gives up, no matter what. A gipper is someone who makes the world a better place, one smile at a time.</p>
+  <p>At Carter Miller's School of Gipper, you will learn from the best teachers and mentors, who are all gippers themselves. You will participate in fun and engaging activities, such as games, crafts, music, and sports. You will also get to meet other gippers from different backgrounds and cultures, and form lasting friendships. You will have the opportunity to showcase your talents and achievements at our annual Gipper Fest, where you can win prizes and awards. And most importantly, you will have a lot of fun!</p>
+  <p>So what are you waiting for? Join Carter Miller's School of Gipper today and become a gipper for life! To enroll, simply fill out the form below and we will contact you soon. We can't wait to meet you!</p>
+  <form>
+    Name: <input type="text" name="name"><br>
+    Age: <input type="number" name="age"><br>
+    Email: <input type="email" name="email"><br>
+    Why do you want to be a gipper? <textarea name="reason"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
