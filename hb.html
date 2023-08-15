@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Brandy!</title>
+  <style>
+    body {
+      background-color: #0099cc;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    #header {
+      padding: 20px;
+      background-color: #003366;
+    }
+
+    #content {
+      padding: 20px;
+    }
+
+    #shark-img {
+      max-width: 100%;
+      height: auto;
+      animation: sharkSwim 10s infinite linear;
+    }
+
+    @keyframes sharkSwim {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Happy Birthday Brandy!</h1>
+    <p>Wishing you a fintastic birthday filled with excitement and joy!</p>
+  </div>
+  <div id="content">
+    <h2>Shark Week Celebration</h2>
+    <p>Join us in celebrating Brandy's birthday with a Shark Week-themed party!</p>
+    <img id="shark-img" src="shark.png" alt="Shark Image">
+  </div>
+</body>
+</html>
